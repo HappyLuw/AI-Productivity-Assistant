@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { AppShell } from "@/components/app-shell";
 import { DISCLAIMER } from "@/components/ai-output";
+import { Mail, FileText, ListChecks } from "lucide-react";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -29,8 +30,8 @@ function Dashboard() {
         {/* Email Generator */}
         <div className="bg-surface border border-border rounded-xl p-6 shadow-sm flex flex-col h-full">
           <div className="flex items-center justify-between mb-4">
-            <div className="size-10 bg-info-soft text-info rounded-lg flex items-center justify-center font-bold font-display">
-              E
+            <div className="size-10 bg-info-soft text-info rounded-lg flex items-center justify-center">
+              <Mail className="size-5" />
             </div>
             <span className="text-xs font-semibold text-info uppercase tracking-wider bg-info-soft px-2 py-1 rounded">
               Tool
@@ -68,8 +69,8 @@ function Dashboard() {
         {/* Meeting Summarizer */}
         <div className="bg-surface border border-border rounded-xl p-6 shadow-sm flex flex-col h-full">
           <div className="flex items-center justify-between mb-4">
-            <div className="size-10 bg-success-soft text-success rounded-lg flex items-center justify-center font-bold font-display">
-              S
+            <div className="size-10 bg-success-soft text-success rounded-lg flex items-center justify-center">
+              <FileText className="size-5" />
             </div>
             <div className="flex items-center gap-1">
               <div className="size-2 bg-success rounded-full animate-pulse" />
@@ -104,8 +105,8 @@ function Dashboard() {
         {/* Task Planner */}
         <div className="bg-surface border border-border rounded-xl p-6 shadow-sm">
           <div className="flex items-center justify-between mb-4">
-            <div className="size-10 bg-warning-soft text-warning rounded-lg flex items-center justify-center font-bold font-display">
-              P
+            <div className="size-10 bg-warning-soft text-warning rounded-lg flex items-center justify-center">
+              <ListChecks className="size-5" />
             </div>
           </div>
           <h2 className="text-lg font-display font-semibold mb-2">AI Task Planner</h2>
