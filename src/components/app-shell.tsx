@@ -6,7 +6,6 @@ import {
   ListChecks,
   Search,
   Menu,
-  X,
 } from "lucide-react";
 import { useState, type ReactNode } from "react";
 import { ChatWidget } from "./chat-widget";
@@ -93,7 +92,7 @@ export function AppShell({ title, children }: { title: string; children: ReactNo
               aria-label={open ? "Close navigation" : "Open navigation"}
               onClick={() => setOpen((v) => !v)}
             >
-              {open ? <Menu className="size-5" /> : <Menu className="size-5" />}
+              <Menu className="size-5" />
             </button>
             <h1 className="text-lg font-semibold font-display truncate">{title}</h1>
           </div>
@@ -111,5 +110,3 @@ export function AppShell({ title, children }: { title: string; children: ReactNo
     </div>
   );
 }
-
-export { X };
